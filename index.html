@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem And Jewellery Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myStyle.css"> 
+
+    <!-- EmailJS scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "DbORTfGIwyT1LfE3G", // if you wanna test replace with your EmailJS public key
+            });
+        })();
+    </script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="#">
+          <img src="gempng.png" alt="Gem and Jewellery Logo">
+        </a>
+        <!-- Navbar toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation links on the right -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jewellery-section">Jewellery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gems-collection">Gem Stones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <video autoplay muted loop id="background-video">
+      <source src="webgem.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  
+  <!-- Phrase Section -->
+  <section class="phrase-section">
+    <div class="container text-center">
+      <h1>Crafting Timeless Beauty<br>One Gem at a Time</h1>
+      <p>Discover the elegance and precision of jewellery crafted with care<br>
+      where every gem tells a story of artistry and passion.</p>
+    </div>
+  </section>
+
+<!-- Jewelry Showcase Section -->
+<section id="jewellery-section" class="jewelry-showcase">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="jewelry-item">
+                    <a href="rings.html" class="jewelry-link">
+                        <img src="rings.jpeg" alt="Rings" class="img-fluid">
+                        <h3>RINGS</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jewelry-item">
+                    <a href="earrings.html" class="jewelry-link">
+                        <img src="earrings.jpeg" alt="Earrings" class="img-fluid">
+                        <h3>EARRINGS</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jewelry-item">
+                    <a href="bangles.html" class="jewelry-link">
+                        <img src="bangles&bracelets.jpeg" alt="Bangles & Bracelets" class="img-fluid">
+                        <h3>BANGLES & BRACELETS</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="jewelry-item">
+                    <a href="necklace.html" class="jewelry-link">
+                        <img src="necklace.jpeg" alt="Necklaces" class="img-fluid">
+                        <h3>NECKLACES</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jewelry-item">
+                    <a href="cufflinks.html" class="jewelry-link">
+                        <img src="cufflinks.jpeg" alt="Cufflinks" class="img-fluid">
+                        <h3>CUFFLINKS</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jewelry-item">
+                    <a href="pendants.html" class="jewelry-link">
+                        <img src="pendants.jpeg" alt="Pendants" class="img-fluid">
+                        <h3>PENDANTS</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- Jewelry Section ends here -->
+
+<!-- Gems Section -->
+<section id="gems-collection" class="gems-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2 class="text-left">Gem Stones</h2>
+                <p class="text-left">Explore the classic charm and beauty of our gemstones. Selected by hand from the best sources, every stone has a distinct history that has been shaped by nature over millions of years. Our selection has something for every lover of the natural world's splendour, whether they are drawn to the intense brilliance of rubies, the profound peace of sapphires, or the vivid tones of emeralds.</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <div class="video-container">
+                    <video width="100%" autoplay loop muted playsinline>
+                        <source src="gemstones.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button class="explore-btn mt-3"onclick="window.location.href='explore-gems.html'">Explore</button>
+            </div>
+        </div>
+    </div>
+</section><!-- Gems Section ends here -->
+
+<!-- About Us Section -->
+<section id="about-us" class="about-section">
+    <div class="container">
+      <div class="row d-flex flex-column align-items-center justify-content-center">
+        <div class="col-12">
+          <img src="aboutus.jpg" alt="About Us Image" class="about-us-image" />
+        </div>
+        <div class="col-12">
+          <h2 class="text-center">About Us</h2>
+          <p class="text-center">Our journey is about respect for nature's marvels in the form of beautiful gemstones and uncompromising commitment to craftsmanship. We take pride in creating jewellery which is timeless in appeal, bespoke displays of elegance, and individuality for each stone. Classic and innovative designs blend traditional artistry with modern techniques. Offered are collections featuring the best gemstones sourced with consideration for ethical concerns and sustainability; each piece reflects the artisan's hand and every cut shapes the gem to bring out the best of nature. Meticulously crafted to become timeless in your story.</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact-us" class="contact-section" style="background-color: #f5f5f5; padding: 60px 0;">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-6">
+                <h3>Get in touch</h3>
+                <p>At the store, you could come have a look at our precious gem stones and our jewellery collection and we will offer you the best price</p>
+                <h4>The Office</h4>
+                <p>Address: 999 The Avenue, Albany Auckland 0632</p>
+                <p>Phone: +64 21 01234567 / 099123456</p>
+                <p>Email: <a href="mailto:info@kavishgemjewels.com">info@kavishgemjewels.com</a></p>  <!-- fictitious email link -->
+                <h4>Business Hours</h4>
+                <p>Monday to Friday - 10am to 6pm<br>Saturday - 10am to 6pm<br>Sunday - 10am to 6pm</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container text-center">
+      <p>© Kavish's Gem & Jewellery Website. All Rights Reserved.</p>
+      <p>
+        <a href="https://validator.w3.org/docs/users.html#Calling" target="_blank" class="validator-link">HTML5</a> |  <!-- link to HTML5 -->
+        <a href="https://jigsaw.w3.org/css-validator/manual.html" target="_blank" class="validator-link">CSS3 Validators</a>  <!-- CSS3 Validator -->
+      </p>
+    </div>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="myScript.js"></script>
+  <script src="contact-us.js"></script>
+</body>
+</html>

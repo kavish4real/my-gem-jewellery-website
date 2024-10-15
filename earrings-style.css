@@ -1,0 +1,99 @@
+/* Navbar Styles */
+.navbar {
+    padding: 0.3rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-nav li {
+    padding-right: 10px;
+}
+
+.nav-link {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #6648b1;
+}
+
+body {
+    padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-brand img {
+        width: 40px;
+    }
+    body {
+        padding-top: 50px;
+    }
+    .navbar {
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+/* Earrings Page Specific Styles */
+.sort-section {
+    margin-bottom: 30px;
+}
+
+.earring-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.earring-card:hover {
+    transform: translateY(-5px);
+}
+
+.earring-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.earring-details {
+    padding: 15px;
+}
+
+.earring-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.earring-price {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments for images */
+@media (max-width: 768px) {
+    .earring-card img {
+        height: 200px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

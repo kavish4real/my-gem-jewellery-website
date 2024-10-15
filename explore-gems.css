@@ -1,0 +1,406 @@
+/* Navbar Styles */
+.navbar {
+    padding: 0.3rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-nav li {
+    padding-right: 10px;
+}
+
+.nav-link {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #6648b1;
+}
+
+body {
+    padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-brand img {
+        width: 40px;
+    }
+    body {
+        padding-top: 50px;
+    }
+    .navbar {
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+/* Hero Video Section Styles */
+.video-section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Discover Section Styles - Adjust background to light gray */
+.gems-discover-section {
+    padding: 80px 0;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+.discover-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gems-discover-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Sapphire Section - White background */
+.sapphire-section {
+    background-color: #ffffff; /* White background for the video section */
+    padding: 60px 0;
+} /* End of Sapphire Section */
+
+.sapphire-section .row {
+    display: flex;
+    align-items: center;
+} /* End of Sapphire Section Row */
+
+.sapphire-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Sapphire Heading */
+
+.sapphire-section p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Sapphire Paragraph */
+
+.sapphire-video-container {
+    width: 100%;
+    aspect-ratio: 16/9; /* Set to 16:9 ratio for a better fit */
+    overflow: hidden;
+    border-radius: 10px; 
+} /* End of Sapphire Video Container */
+
+.sapphire-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} /* End of Sapphire Video */
+
+/* Button Styles */
+.explore-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.explore-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust padding and font sizes for mobile */
+    .gems-discover-section {
+        padding: 40px 0;
+    }
+    .discover-title {
+        font-size: 2.5rem;
+    }
+    .gems-discover-section p {
+        font-size: 1rem;
+    }
+
+    .sapphire-section {
+        padding: 40px 0;
+    }
+    .sapphire-section h2 {
+        font-size: 2.5rem;
+    }
+    .sapphire-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Ruby Section - White background */
+.ruby-section {
+    background-color: #ffffff; /* White background for the video section */
+    padding: 60px 0;
+} /* End of Ruby Section */
+
+.ruby-section .row {
+    display: flex;
+    align-items: center;
+} /* End of Ruby Section Row */
+
+.ruby-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Ruby Heading */
+
+.ruby-section p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Ruby Paragraph */
+
+.ruby-video-container {
+    width: 100%;
+    aspect-ratio: 16/9; /* Set to 16:9 ratio for a better fit */
+    overflow: hidden;
+    border-radius: 10px; /* Optional: rounded corners */
+} /* End of Ruby Video Container */
+
+.ruby-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} /* End of Ruby Video */
+
+/* Responsive Styles for Ruby */
+@media (max-width: 768px) {
+    .ruby-section {
+        padding: 40px 0;
+    }
+    .ruby-section h2 {
+        font-size: 2.5rem;
+    }
+    .ruby-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Moonstone Section - White background */
+.moonstone-section {
+    background-color: #ffffff; /* White background for the video section */
+    padding: 60px 0;
+} /* End of Moonstone Section */
+
+.moonstone-section .row {
+    display: flex;
+    align-items: center;
+} /* End of Moonstone Section Row */
+
+.moonstone-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Moonstone Heading */
+
+.moonstone-section p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Moonstone Paragraph */
+
+.moonstone-video-container {
+    width: 100%;
+    aspect-ratio: 16/9; /* Set to 16:9 ratio for a better fit */
+    overflow: hidden;
+    border-radius: 10px; 
+} /* End of Moonstone Video Container */
+
+.moonstone-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} /* End of Moonstone Video */
+
+/* Responsive Styles for Moonstone */
+@media (max-width: 768px) {
+    .moonstone-section {
+        padding: 40px 0;
+    }
+    .moonstone-section h2 {
+        font-size: 2.5rem;
+    }
+    .moonstone-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Purple Sapphire Section - White background */
+.purple-sapphire-section {
+    background-color: #ffffff; /* White background for the video section */
+    padding: 60px 0;
+} /* End of Purple Sapphire Section */
+
+.purple-sapphire-section .row {
+    display: flex;
+    align-items: center;
+} /* End of Purple Sapphire Section Row */
+
+.purple-sapphire-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Purple Sapphire Heading */
+
+.purple-sapphire-section p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Purple Sapphire Paragraph */
+
+.purple-sapphire-video-container {
+    width: 100%;
+    aspect-ratio: 16/9; /* Set to 16:9 ratio for a better fit */
+    overflow: hidden;
+    border-radius: 10px; 
+} /* End of Purple Sapphire Video Container */
+
+.purple-sapphire-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} /* End of Purple Sapphire Video */
+
+/* Responsive Styles for Purple Sapphire */
+@media (max-width: 768px) {
+    .purple-sapphire-section {
+        padding: 40px 0;
+    }
+    .purple-sapphire-section h2 {
+        font-size: 2.5rem;
+    }
+    .purple-sapphire-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Padparadscha Sapphire Section - White background */
+.padparadscha-sapphire-section {
+    background-color: #ffffff; /* White background for the video section */
+    padding: 60px 0;
+} /* End of Padparadscha Sapphire Section */
+
+.padparadscha-sapphire-section .row {
+    display: flex;
+    align-items: center;
+} /* End of Padparadscha Sapphire Section Row */
+
+.padparadscha-sapphire-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Padparadscha Sapphire Heading */
+
+.padparadscha-sapphire-section p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+} /* End of Padparadscha Sapphire Paragraph */
+
+.padparadscha-video-container {
+    width: 100%;
+    aspect-ratio: 16/9; /* Set to 16:9 ratio for a better fit */
+    overflow: hidden;
+    border-radius: 10px; 
+} /* End of Padparadscha Sapphire Video Container */
+
+.padparadscha-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} /* End of Padparadscha Sapphire Video */
+
+/* Responsive Styles for Padparadscha Sapphire */
+@media (max-width: 768px) {
+    .padparadscha-sapphire-section {
+        padding: 40px 0;
+    }
+    .padparadscha-sapphire-section h2 {
+        font-size: 2.5rem;
+    }
+    .padparadscha-sapphire-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Learn More Button Styles */
+.learn-more-btn {
+    display: inline-block;
+    background-color: #6648b1;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 40px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.learn-more-btn:hover {
+    background-color: #3f3559;
+    transform: translateY(-2px);
+}
+
+/* Center the button */
+.text-center {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
